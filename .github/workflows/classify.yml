@@ -10,6 +10,7 @@ on:
 jobs:
   classify:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -17,9 +18,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install torch (CPU-only build)
         run: |
-          pip install astroquery torch torchvision pillow requests --extra-index-url https://download.pytorch.org/whl/cpu
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Install remaining dependencies
+        run: |
+          pip install astroquery pillow requests
 
       - name: Run fetch + classify
         run: |
