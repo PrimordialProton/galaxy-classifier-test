@@ -1,0 +1,35 @@
+name: Fetch and classify new JWST images
+
+on:
+  schedule:
+    # Runs once a day at 06:00 UTC. Adjust as you like - MAST doesn't
+    # release new public data constantly, so daily is a reasonable cadence.
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install astroquery torch torchvision pillow requests --extra-index-url https://download.pytorch.org/whl/cpu
+
+      - name: Run fetch + classify
+        run: |
+          cd classifier-pipeline
+          python fetch_and_classify.py --max_new 10
+
+      - name: Commit updated results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/jwst_results.json data/thumbnails classifier-pipeline/manifest.json
+          git diff --staged --quiet || git commit -m "Auto-update: new classified JWST images"
+          git push

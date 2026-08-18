@@ -1,0 +1,5 @@
+astroquery
+torch
+torchvision
+pillow
+requests
