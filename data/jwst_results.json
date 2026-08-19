@@ -1,5 +1,405 @@
 [
   {
+    "obs_id": "224250330",
+    "target_name": "GOODS-N-MEDIUM02",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60343.68589113",
+    "category": "other",
+    "confidence": 99.4,
+    "thumbnail": "thumbnails/224250330.jpg",
+    "processed_at": "2026-08-19T06:22:29.137751+00:00"
+  },
+  {
+    "obs_id": "224250184",
+    "target_name": "GOODS-N-MEDIUM03",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60344.50157398",
+    "category": "other",
+    "confidence": 99.2,
+    "thumbnail": "thumbnails/224250184.jpg",
+    "processed_at": "2026-08-19T06:22:28.907552+00:00"
+  },
+  {
+    "obs_id": "114357283",
+    "target_name": "GOODS-N-MEDIUM01",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60347.15961797",
+    "category": "spiral",
+    "confidence": 96.8,
+    "thumbnail": "thumbnails/114357283.jpg",
+    "processed_at": "2026-08-19T06:22:28.650370+00:00"
+  },
+  {
+    "obs_id": "224250378",
+    "target_name": "1181-MERGED-APT-CLEAN-CLEAN",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60348.03451381",
+    "category": "other",
+    "confidence": 85.7,
+    "thumbnail": "thumbnails/224250378.jpg",
+    "processed_at": "2026-08-19T06:22:28.375373+00:00"
+  },
+  {
+    "obs_id": "213040210",
+    "target_name": "CWEBTILE-1-0",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60406.15873839",
+    "category": "other",
+    "confidence": 98.2,
+    "thumbnail": "thumbnails/213040210.jpg",
+    "processed_at": "2026-08-19T06:22:26.698604+00:00"
+  },
+  {
+    "obs_id": "213040615",
+    "target_name": "CWEBTILE-3-14",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60406.94187493",
+    "category": "other",
+    "confidence": 99.0,
+    "thumbnail": "thumbnails/213040615.jpg",
+    "processed_at": "2026-08-19T06:22:26.415460+00:00"
+  },
+  {
+    "obs_id": "213041353",
+    "target_name": "CWEBTILE-2-16",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60407.95363413",
+    "category": "other",
+    "confidence": 78.9,
+    "thumbnail": "thumbnails/213041353.jpg",
+    "processed_at": "2026-08-19T06:22:26.032862+00:00"
+  },
+  {
+    "obs_id": "213041349",
+    "target_name": "CWEBTILE-2-17",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60407.99547444",
+    "category": "other",
+    "confidence": 98.1,
+    "thumbnail": "thumbnails/213041349.jpg",
+    "processed_at": "2026-08-19T06:22:25.561239+00:00"
+  },
+  {
+    "obs_id": "213397328",
+    "target_name": "CWEBTILE-1-8",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60417.70247671",
+    "category": "other",
+    "confidence": 67.7,
+    "thumbnail": "thumbnails/213397328.jpg",
+    "processed_at": "2026-08-19T06:22:25.295626+00:00"
+  },
+  {
+    "obs_id": "213399752",
+    "target_name": "CWEBTILE-0-9",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60418.05267357",
+    "category": "other",
+    "confidence": 63.3,
+    "thumbnail": "thumbnails/213399752.jpg",
+    "processed_at": "2026-08-19T06:22:24.916242+00:00"
+  },
+  {
+    "obs_id": "213400059",
+    "target_name": "CWEBTILE-1-10",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60418.0743055",
+    "category": "other",
+    "confidence": 48.9,
+    "thumbnail": "thumbnails/213400059.jpg",
+    "processed_at": "2026-08-19T06:22:24.457858+00:00"
+  },
+  {
+    "obs_id": "213400269",
+    "target_name": "CWEBTILE-3-11",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60418.15697912",
+    "category": "other",
+    "confidence": 79.9,
+    "thumbnail": "thumbnails/213400269.jpg",
+    "processed_at": "2026-08-19T06:22:24.226575+00:00"
+  },
+  {
+    "obs_id": "213419741",
+    "target_name": "CWEBTILE-3-6",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60419.27464114",
+    "category": "other",
+    "confidence": 96.9,
+    "thumbnail": "thumbnails/213419741.jpg",
+    "processed_at": "2026-08-19T06:22:23.350330+00:00"
+  },
+  {
+    "obs_id": "213505175",
+    "target_name": "CWEBTILE-4-3",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60423.69322901",
+    "category": "other",
+    "confidence": 98.4,
+    "thumbnail": "thumbnails/213505175.jpg",
+    "processed_at": "2026-08-19T06:22:22.980759+00:00"
+  },
+  {
+    "obs_id": "224250352",
+    "target_name": "21_3_23_mediumjwst_trim_ta5",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60436.65274302",
+    "category": "other",
+    "confidence": 97.6,
+    "thumbnail": "thumbnails/224250352.jpg",
+    "processed_at": "2026-08-19T06:22:22.725064+00:00"
+  },
+  {
+    "obs_id": "214680156",
+    "target_name": "CWEBTILE-5-2",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60448.00871524",
+    "category": "other",
+    "confidence": 95.9,
+    "thumbnail": "thumbnails/214680156.jpg",
+    "processed_at": "2026-08-19T06:22:22.331226+00:00"
+  },
+  {
+    "obs_id": "214893282",
+    "target_name": "COSMOS-1-Tile-21",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60451.17810187",
+    "category": "other",
+    "confidence": 98.7,
+    "thumbnail": "thumbnails/214893282.jpg",
+    "processed_at": "2026-08-19T06:22:22.064022+00:00"
+  },
+  {
+    "obs_id": "214932792",
+    "target_name": "COSMOS-1-Tile-22",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60451.39109951",
+    "category": "other",
+    "confidence": 99.1,
+    "thumbnail": "thumbnails/214932792.jpg",
+    "processed_at": "2026-08-19T06:22:21.810038+00:00"
+  },
+  {
+    "obs_id": "214932787",
+    "target_name": "COSMOS-1-Tile-23",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60451.41371523",
+    "category": "other",
+    "confidence": 98.0,
+    "thumbnail": "thumbnails/214932787.jpg",
+    "processed_at": "2026-08-19T06:22:21.557496+00:00"
+  },
+  {
+    "obs_id": "214954552",
+    "target_name": "COSMOS-1-Tile-24",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60451.49121525",
+    "category": "other",
+    "confidence": 98.9,
+    "thumbnail": "thumbnails/214954552.jpg",
+    "processed_at": "2026-08-19T06:22:21.290186+00:00"
+  },
+  {
+    "obs_id": "220850138",
+    "target_name": "UDS-2-Tile-8",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60509.37942122",
+    "category": "other",
+    "confidence": 98.1,
+    "thumbnail": "thumbnails/220850138.jpg",
+    "processed_at": "2026-08-19T06:22:20.985034+00:00"
+  },
+  {
+    "obs_id": "238309302",
+    "target_name": "UDS-2",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60514.43238421",
+    "category": "other",
+    "confidence": 77.4,
+    "thumbnail": "thumbnails/238309302.jpg",
+    "processed_at": "2026-08-19T06:22:20.509620+00:00"
+  },
+  {
+    "obs_id": "222759543",
+    "target_name": "UDS-2-Tile-10",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60514.43523145",
+    "category": "other",
+    "confidence": 98.5,
+    "thumbnail": "thumbnails/222759543.jpg",
+    "processed_at": "2026-08-19T06:22:20.064333+00:00"
+  },
+  {
+    "obs_id": "224908569",
+    "target_name": "POINTINGONE-C",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60582.76182864",
+    "category": "other",
+    "confidence": 93.7,
+    "thumbnail": "thumbnails/224908569.jpg",
+    "processed_at": "2026-08-19T06:22:19.745916+00:00"
+  },
+  {
+    "obs_id": "179004898",
+    "target_name": "POINTINGONE-A",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60583.40187491",
+    "category": "other",
+    "confidence": 99.7,
+    "thumbnail": "thumbnails/179004898.jpg",
+    "processed_at": "2026-08-19T06:22:19.151819+00:00"
+  },
+  {
+    "obs_id": "179088054",
+    "target_name": "POINTINGTWO-A",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60584.60827537",
+    "category": "other",
+    "confidence": 99.6,
+    "thumbnail": "thumbnails/179088054.jpg",
+    "processed_at": "2026-08-19T06:22:18.754081+00:00"
+  },
+  {
+    "obs_id": "224908656",
+    "target_name": "POINTINGTHREE-C",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60585.09243054",
+    "category": "other",
+    "confidence": 99.6,
+    "thumbnail": "thumbnails/224908656.jpg",
+    "processed_at": "2026-08-19T06:22:18.429123+00:00"
+  },
+  {
+    "obs_id": "223997010",
+    "target_name": "POINTINGFOUR-B",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60586.32252312",
+    "category": "other",
+    "confidence": 99.3,
+    "thumbnail": "thumbnails/223997010.jpg",
+    "processed_at": "2026-08-19T06:22:18.177969+00:00"
+  },
+  {
+    "obs_id": "181845137",
+    "target_name": "POINTINGTHREE-B",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60591.41234948",
+    "category": "other",
+    "confidence": 99.4,
+    "thumbnail": "thumbnails/181845137.jpg",
+    "processed_at": "2026-08-19T06:22:17.919292+00:00"
+  },
+  {
+    "obs_id": "181968197",
+    "target_name": "1180_medium_jwst_trim2_clean1",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60591.99486106",
+    "category": "other",
+    "confidence": 91.9,
+    "thumbnail": "thumbnails/181968197.jpg",
+    "processed_at": "2026-08-19T06:22:17.654714+00:00"
+  },
+  {
+    "obs_id": "183106713",
+    "target_name": "MEDS0006",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60595.03694438",
+    "category": "other",
+    "confidence": 97.7,
+    "thumbnail": "thumbnails/183106713.jpg",
+    "processed_at": "2026-08-19T06:22:17.293929+00:00"
+  },
+  {
+    "obs_id": "185423320",
+    "target_name": "1286_medium_jwst_trim2_clean1",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60603.22503472",
+    "category": "other",
+    "confidence": 86.9,
+    "thumbnail": "thumbnails/185423320.jpg",
+    "processed_at": "2026-08-19T06:22:17.000816+00:00"
+  },
+  {
+    "obs_id": "191536557",
+    "target_name": "MEDS0004",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60630.27833325",
+    "category": "other",
+    "confidence": 99.3,
+    "thumbnail": "thumbnails/191536557.jpg",
+    "processed_at": "2026-08-19T06:22:16.361771+00:00"
+  },
+  {
+    "obs_id": "192112181",
+    "target_name": "MEDS0001-replan",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60631.64879628",
+    "category": "other",
+    "confidence": 97.8,
+    "thumbnail": "thumbnails/192112181.jpg",
+    "processed_at": "2026-08-19T06:22:16.040583+00:00"
+  },
+  {
+    "obs_id": "198802999",
+    "target_name": "1286_4of6_trim_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60663.72128468",
+    "category": "other",
+    "confidence": 96.0,
+    "thumbnail": "thumbnails/198802999.jpg",
+    "processed_at": "2026-08-19T06:22:15.669080+00:00"
+  },
+  {
+    "obs_id": "198949026",
+    "target_name": "1286_7and8_trim_final_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60664.78586798",
+    "category": "other",
+    "confidence": 90.2,
+    "thumbnail": "thumbnails/198949026.jpg",
+    "processed_at": "2026-08-19T06:22:15.169259+00:00"
+  },
+  {
+    "obs_id": "199975196",
+    "target_name": "MEDS0002a",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60676.52178232",
+    "category": "other",
+    "confidence": 90.1,
+    "thumbnail": "thumbnails/199975196.jpg",
+    "processed_at": "2026-08-19T06:22:14.660113+00:00"
+  },
+  {
+    "obs_id": "199982450",
+    "target_name": "MEDS0002b",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60676.58075215",
+    "category": "other",
+    "confidence": 95.1,
+    "thumbnail": "thumbnails/199982450.jpg",
+    "processed_at": "2026-08-19T06:22:13.996014+00:00"
+  },
+  {
+    "obs_id": "200061676",
+    "target_name": "MEDS0005-replan",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60677.40751152",
+    "category": "other",
+    "confidence": 99.5,
+    "thumbnail": "thumbnails/200061676.jpg",
+    "processed_at": "2026-08-19T06:22:13.488474+00:00"
+  },
+  {
+    "obs_id": "236585166",
+    "target_name": "1287_trim_final_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61054.09403935",
+    "category": "spiral",
+    "confidence": 97.9,
+    "thumbnail": "thumbnails/236585166.jpg",
+    "processed_at": "2026-08-19T06:22:13.236579+00:00"
+  },
+  {
     "obs_id": "303219256",
     "target_name": "LP-469-206",
     "instrument": "NIRCAM/CORON",
@@ -198,205 +598,5 @@
     "confidence": 97.1,
     "thumbnail": "thumbnails/306669495.jpg",
     "processed_at": "2026-08-19T06:07:58.371017+00:00"
-  },
-  {
-    "obs_id": "306669659",
-    "target_name": "J013340.31+040059.7",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "61269.6395833",
-    "category": "other",
-    "confidence": 81.0,
-    "thumbnail": "thumbnails/306669659.jpg",
-    "processed_at": "2026-08-19T06:07:58.213970+00:00"
-  },
-  {
-    "obs_id": "306669894",
-    "target_name": "NGC1527",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "61270.00280084",
-    "category": "other",
-    "confidence": 89.8,
-    "thumbnail": "thumbnails/306669894.jpg",
-    "processed_at": "2026-08-19T06:07:58.026278+00:00"
-  },
-  {
-    "obs_id": "449797362",
-    "target_name": "RXCJ0018+1626",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "61270.12674759",
-    "category": "other",
-    "confidence": 96.7,
-    "thumbnail": "thumbnails/449797362.jpg",
-    "processed_at": "2026-08-19T06:07:57.640873+00:00"
-  },
-  {
-    "obs_id": "449791090",
-    "target_name": "SN_Helios",
-    "instrument": "NIRSPEC/SLIT",
-    "obs_release": "61270.14834484",
-    "category": "elliptical",
-    "confidence": 67.3,
-    "thumbnail": "thumbnails/449791090.jpg",
-    "processed_at": "2026-08-19T06:07:57.380700+00:00"
-  },
-  {
-    "obs_id": "306867963",
-    "target_name": "GY92-152",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61270.50106477",
-    "category": "other",
-    "confidence": 97.3,
-    "thumbnail": "thumbnails/306867963.jpg",
-    "processed_at": "2026-08-19T06:07:56.915509+00:00"
-  },
-  {
-    "obs_id": "307182553",
-    "target_name": "BKG_1-2-10-21-22-25",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61270.71313647",
-    "category": "other",
-    "confidence": 96.7,
-    "thumbnail": "thumbnails/307182553.jpg",
-    "processed_at": "2026-08-19T06:07:56.778373+00:00"
-  },
-  {
-    "obs_id": "307241759",
-    "target_name": "BBRCG-13",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61270.73972218",
-    "category": "other",
-    "confidence": 96.4,
-    "thumbnail": "thumbnails/307241759.jpg",
-    "processed_at": "2026-08-19T06:07:56.410276+00:00"
-  },
-  {
-    "obs_id": "307282732",
-    "target_name": "BKG_3-7-14",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61270.75415507",
-    "category": "other",
-    "confidence": 69.5,
-    "thumbnail": "thumbnails/307282732.jpg",
-    "processed_at": "2026-08-19T06:07:56.190152+00:00"
-  },
-  {
-    "obs_id": "307525181",
-    "target_name": "GY92-323",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61270.98480311",
-    "category": "other",
-    "confidence": 95.6,
-    "thumbnail": "thumbnails/307525181.jpg",
-    "processed_at": "2026-08-19T06:07:56.054868+00:00"
-  },
-  {
-    "obs_id": "307525265",
-    "target_name": "BKG_6-35-16",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.00936334",
-    "category": "other",
-    "confidence": 84.3,
-    "thumbnail": "thumbnails/307525265.jpg",
-    "processed_at": "2026-08-19T06:07:55.880737+00:00"
-  },
-  {
-    "obs_id": "307525272",
-    "target_name": "ISO-Oph-200",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.03230319",
-    "category": "other",
-    "confidence": 95.5,
-    "thumbnail": "thumbnails/307525272.jpg",
-    "processed_at": "2026-08-19T05:39:11.904023+00:00"
-  },
-  {
-    "obs_id": "307525311",
-    "target_name": "BKG_28-31-39",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.04638885",
-    "category": "other",
-    "confidence": 97.1,
-    "thumbnail": "thumbnails/307525311.jpg",
-    "processed_at": "2026-08-19T05:39:11.414900+00:00"
-  },
-  {
-    "obs_id": "307525363",
-    "target_name": "CRBR-2422.8-3423",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.06987264",
-    "category": "other",
-    "confidence": 84.3,
-    "thumbnail": "thumbnails/307525363.jpg",
-    "processed_at": "2026-08-19T05:39:10.944318+00:00"
-  },
-  {
-    "obs_id": "307525414",
-    "target_name": "BKG_11-32-37",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.09004636",
-    "category": "other",
-    "confidence": 88.5,
-    "thumbnail": "thumbnails/307525414.jpg",
-    "processed_at": "2026-08-19T05:39:10.428152+00:00"
-  },
-  {
-    "obs_id": "307525472",
-    "target_name": "IRAS15596-bkg",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.12031251",
-    "category": "spiral",
-    "confidence": 99.9,
-    "thumbnail": "thumbnails/307525472.jpg",
-    "processed_at": "2026-08-19T05:39:09.806560+00:00"
-  },
-  {
-    "obs_id": "307525473",
-    "target_name": "IRAS15596-bkg",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.12031251",
-    "category": "other",
-    "confidence": 99.2,
-    "thumbnail": "thumbnails/307525473.jpg",
-    "processed_at": "2026-08-19T05:39:09.353660+00:00"
-  },
-  {
-    "obs_id": "307525471",
-    "target_name": "IRAS15596-bkg",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.12031251",
-    "category": "other",
-    "confidence": 99.2,
-    "thumbnail": "thumbnails/307525471.jpg",
-    "processed_at": "2026-08-19T05:39:08.830379+00:00"
-  },
-  {
-    "obs_id": "307525543",
-    "target_name": "IRAS15596-5301",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.13961802",
-    "category": "other",
-    "confidence": 99.3,
-    "thumbnail": "thumbnails/307525543.jpg",
-    "processed_at": "2026-08-19T05:39:08.250136+00:00"
-  },
-  {
-    "obs_id": "307525551",
-    "target_name": "IRAS15596-5301",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.13961802",
-    "category": "other",
-    "confidence": 96.0,
-    "thumbnail": "thumbnails/307525551.jpg",
-    "processed_at": "2026-08-19T05:39:07.703984+00:00"
-  },
-  {
-    "obs_id": "307525548",
-    "target_name": "IRAS15596-5301",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61271.13961802",
-    "category": "other",
-    "confidence": 99.0,
-    "thumbnail": "thumbnails/307525548.jpg",
-    "processed_at": "2026-08-19T05:39:07.202189+00:00"
   }
 ]
