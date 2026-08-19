@@ -1,5 +1,305 @@
 [
   {
+    "obs_id": "303219256",
+    "target_name": "LP-469-206",
+    "instrument": "NIRCAM/CORON",
+    "obs_release": "61263.57644667",
+    "category": "other",
+    "confidence": 98.2,
+    "thumbnail": "thumbnails/303219256.jpg",
+    "processed_at": "2026-08-19T06:08:02.060391+00:00"
+  },
+  {
+    "obs_id": "303219291",
+    "target_name": "G-19-7",
+    "instrument": "NIRCAM/CORON",
+    "obs_release": "61263.57907395",
+    "category": "other",
+    "confidence": 97.9,
+    "thumbnail": "thumbnails/303219291.jpg",
+    "processed_at": "2026-08-19T06:08:01.952402+00:00"
+  },
+  {
+    "obs_id": "303219282",
+    "target_name": "V-TZ-Ari",
+    "instrument": "NIRCAM/CORON",
+    "obs_release": "61263.58144665",
+    "category": "other",
+    "confidence": 97.0,
+    "thumbnail": "thumbnails/303219282.jpg",
+    "processed_at": "2026-08-19T06:08:01.825362+00:00"
+  },
+  {
+    "obs_id": "303219292",
+    "target_name": "Wolf-629",
+    "instrument": "NIRCAM/CORON",
+    "obs_release": "61263.58185175",
+    "category": "other",
+    "confidence": 97.0,
+    "thumbnail": "thumbnails/303219292.jpg",
+    "processed_at": "2026-08-19T06:08:01.724267+00:00"
+  },
+  {
+    "obs_id": "447194178",
+    "target_name": "Clean_North_CVZ_MRS",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61263.77915507",
+    "category": "other",
+    "confidence": 98.9,
+    "thumbnail": "thumbnails/447194178.jpg",
+    "processed_at": "2026-08-19T06:08:01.607492+00:00"
+  },
+  {
+    "obs_id": "447289642",
+    "target_name": "Clean_North_CVZ_MRS-copy_NIR",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61264.37950224",
+    "category": "other",
+    "confidence": 96.9,
+    "thumbnail": "thumbnails/447289642.jpg",
+    "processed_at": "2026-08-19T06:08:01.483636+00:00"
+  },
+  {
+    "obs_id": "303220489",
+    "target_name": "UCAC4-300-090317",
+    "instrument": "NIRCAM/CORON",
+    "obs_release": "61264.88229162",
+    "category": "other",
+    "confidence": 99.4,
+    "thumbnail": "thumbnails/303220489.jpg",
+    "processed_at": "2026-08-19T06:08:01.263136+00:00"
+  },
+  {
+    "obs_id": "447564673",
+    "target_name": "ECLIPTIC-RA160",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61264.90384257",
+    "category": "other",
+    "confidence": 82.7,
+    "thumbnail": "thumbnails/447564673.jpg",
+    "processed_at": "2026-08-19T06:08:01.115877+00:00"
+  },
+  {
+    "obs_id": "447646651",
+    "target_name": "Clean_North_CVZ_IMA_back",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61264.96980319",
+    "category": "other",
+    "confidence": 97.5,
+    "thumbnail": "thumbnails/447646651.jpg",
+    "processed_at": "2026-08-19T06:08:00.907916+00:00"
+  },
+  {
+    "obs_id": "303220629",
+    "target_name": "Maki-Repeated",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61264.9901157",
+    "category": "other",
+    "confidence": 90.6,
+    "thumbnail": "thumbnails/303220629.jpg",
+    "processed_at": "2026-08-19T06:08:00.751637+00:00"
+  },
+  {
+    "obs_id": "303220618",
+    "target_name": "Luna-Repeated",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61264.99282396",
+    "category": "other",
+    "confidence": 97.9,
+    "thumbnail": "thumbnails/303220618.jpg",
+    "processed_at": "2026-08-19T06:08:00.362224+00:00"
+  },
+  {
+    "obs_id": "303220619",
+    "target_name": "Greebo-Repeated",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61265.00541665",
+    "category": "other",
+    "confidence": 87.4,
+    "thumbnail": "thumbnails/303220619.jpg",
+    "processed_at": "2026-08-19T06:08:00.137378+00:00"
+  },
+  {
+    "obs_id": "304735617",
+    "target_name": "Astraea",
+    "instrument": "NIRSPEC/IFU",
+    "obs_release": "61266.66258101",
+    "category": "elliptical",
+    "confidence": 72.6,
+    "thumbnail": "thumbnails/304735617.jpg",
+    "processed_at": "2026-08-19T06:07:59.864957+00:00"
+  },
+  {
+    "obs_id": "304968578",
+    "target_name": "HIP84478",
+    "instrument": "MIRI/CORON",
+    "obs_release": "61266.76483792",
+    "category": "other",
+    "confidence": 99.2,
+    "thumbnail": "thumbnails/304968578.jpg",
+    "processed_at": "2026-08-19T06:07:59.644688+00:00"
+  },
+  {
+    "obs_id": "305060568",
+    "target_name": "HIP84478-bkg",
+    "instrument": "MIRI/CORON",
+    "obs_release": "61266.92010402",
+    "category": "other",
+    "confidence": 99.2,
+    "thumbnail": "thumbnails/305060568.jpg",
+    "processed_at": "2026-08-19T06:07:59.522003+00:00"
+  },
+  {
+    "obs_id": "306032706",
+    "target_name": "AT2025mkn",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61266.96679391",
+    "category": "other",
+    "confidence": 97.5,
+    "thumbnail": "thumbnails/306032706.jpg",
+    "processed_at": "2026-08-19T06:07:59.367012+00:00"
+  },
+  {
+    "obs_id": "449168505",
+    "target_name": "785_Zwetana",
+    "instrument": "NIRSPEC/IFU",
+    "obs_release": "61267.23896991",
+    "category": "elliptical",
+    "confidence": 70.0,
+    "thumbnail": "thumbnails/449168505.jpg",
+    "processed_at": "2026-08-19T06:07:59.025724+00:00"
+  },
+  {
+    "obs_id": "306669283",
+    "target_name": "NGC-6528",
+    "instrument": "NIRISS/IMAGE",
+    "obs_release": "61269.0392013",
+    "category": "other",
+    "confidence": 99.1,
+    "thumbnail": "thumbnails/306669283.jpg",
+    "processed_at": "2026-08-19T06:07:58.761484+00:00"
+  },
+  {
+    "obs_id": "306669410",
+    "target_name": "SR-12C-MIR",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61269.60041656",
+    "category": "other",
+    "confidence": 99.0,
+    "thumbnail": "thumbnails/306669410.jpg",
+    "processed_at": "2026-08-19T06:07:58.541262+00:00"
+  },
+  {
+    "obs_id": "306669495",
+    "target_name": "Background-for-SR12C-MIR",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61269.60111106",
+    "category": "other",
+    "confidence": 97.1,
+    "thumbnail": "thumbnails/306669495.jpg",
+    "processed_at": "2026-08-19T06:07:58.371017+00:00"
+  },
+  {
+    "obs_id": "306669659",
+    "target_name": "J013340.31+040059.7",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61269.6395833",
+    "category": "other",
+    "confidence": 81.0,
+    "thumbnail": "thumbnails/306669659.jpg",
+    "processed_at": "2026-08-19T06:07:58.213970+00:00"
+  },
+  {
+    "obs_id": "306669894",
+    "target_name": "NGC1527",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61270.00280084",
+    "category": "other",
+    "confidence": 89.8,
+    "thumbnail": "thumbnails/306669894.jpg",
+    "processed_at": "2026-08-19T06:07:58.026278+00:00"
+  },
+  {
+    "obs_id": "449797362",
+    "target_name": "RXCJ0018+1626",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61270.12674759",
+    "category": "other",
+    "confidence": 96.7,
+    "thumbnail": "thumbnails/449797362.jpg",
+    "processed_at": "2026-08-19T06:07:57.640873+00:00"
+  },
+  {
+    "obs_id": "449791090",
+    "target_name": "SN_Helios",
+    "instrument": "NIRSPEC/SLIT",
+    "obs_release": "61270.14834484",
+    "category": "elliptical",
+    "confidence": 67.3,
+    "thumbnail": "thumbnails/449791090.jpg",
+    "processed_at": "2026-08-19T06:07:57.380700+00:00"
+  },
+  {
+    "obs_id": "306867963",
+    "target_name": "GY92-152",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61270.50106477",
+    "category": "other",
+    "confidence": 97.3,
+    "thumbnail": "thumbnails/306867963.jpg",
+    "processed_at": "2026-08-19T06:07:56.915509+00:00"
+  },
+  {
+    "obs_id": "307182553",
+    "target_name": "BKG_1-2-10-21-22-25",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61270.71313647",
+    "category": "other",
+    "confidence": 96.7,
+    "thumbnail": "thumbnails/307182553.jpg",
+    "processed_at": "2026-08-19T06:07:56.778373+00:00"
+  },
+  {
+    "obs_id": "307241759",
+    "target_name": "BBRCG-13",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61270.73972218",
+    "category": "other",
+    "confidence": 96.4,
+    "thumbnail": "thumbnails/307241759.jpg",
+    "processed_at": "2026-08-19T06:07:56.410276+00:00"
+  },
+  {
+    "obs_id": "307282732",
+    "target_name": "BKG_3-7-14",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61270.75415507",
+    "category": "other",
+    "confidence": 69.5,
+    "thumbnail": "thumbnails/307282732.jpg",
+    "processed_at": "2026-08-19T06:07:56.190152+00:00"
+  },
+  {
+    "obs_id": "307525181",
+    "target_name": "GY92-323",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61270.98480311",
+    "category": "other",
+    "confidence": 95.6,
+    "thumbnail": "thumbnails/307525181.jpg",
+    "processed_at": "2026-08-19T06:07:56.054868+00:00"
+  },
+  {
+    "obs_id": "307525265",
+    "target_name": "BKG_6-35-16",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.00936334",
+    "category": "other",
+    "confidence": 84.3,
+    "thumbnail": "thumbnails/307525265.jpg",
+    "processed_at": "2026-08-19T06:07:55.880737+00:00"
+  },
+  {
     "obs_id": "307525272",
     "target_name": "ISO-Oph-200",
     "instrument": "MIRI/IMAGE",
