@@ -29,7 +29,7 @@ jobs:
       - name: Run fetch + classify
         run: |
           cd classifier-pipeline
-          python fetch_and_classify.py --max_new 10
+          python -u fetch_and_classify.py --max_new 10
 
       - name: Commit updated results
         run: |

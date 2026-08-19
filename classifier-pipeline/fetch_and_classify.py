@@ -36,6 +36,15 @@ import requests
 import torch
 from PIL import Image
 
+# Prevent astropy from trying to download Earth-rotation reference data
+# (IERS bulletins) from a remote server on first use of Time.now() etc.
+# That download can hang indefinitely in CI/sandboxed environments with
+# restricted network access - this was the actual cause of runs getting
+# stuck at what looked like a stalled progress bar. We don't need
+# leap-second precision here, so the bundled offline data is fine.
+from astropy.utils import iers
+iers.conf.auto_download = False
+
 # Reuse the same model architecture + preprocessing as training, so
 # inference exactly matches what the model was trained on.
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
