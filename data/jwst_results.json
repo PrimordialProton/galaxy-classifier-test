@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "obs_id": "307525272",
+    "target_name": "ISO-Oph-200",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.03230319",
+    "category": "other",
+    "confidence": 95.5,
+    "thumbnail": "thumbnails/307525272.jpg",
+    "processed_at": "2026-08-19T05:39:11.904023+00:00"
+  },
+  {
+    "obs_id": "307525311",
+    "target_name": "BKG_28-31-39",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.04638885",
+    "category": "other",
+    "confidence": 97.1,
+    "thumbnail": "thumbnails/307525311.jpg",
+    "processed_at": "2026-08-19T05:39:11.414900+00:00"
+  },
+  {
+    "obs_id": "307525363",
+    "target_name": "CRBR-2422.8-3423",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.06987264",
+    "category": "other",
+    "confidence": 84.3,
+    "thumbnail": "thumbnails/307525363.jpg",
+    "processed_at": "2026-08-19T05:39:10.944318+00:00"
+  },
+  {
+    "obs_id": "307525414",
+    "target_name": "BKG_11-32-37",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.09004636",
+    "category": "other",
+    "confidence": 88.5,
+    "thumbnail": "thumbnails/307525414.jpg",
+    "processed_at": "2026-08-19T05:39:10.428152+00:00"
+  },
+  {
+    "obs_id": "307525472",
+    "target_name": "IRAS15596-bkg",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.12031251",
+    "category": "spiral",
+    "confidence": 99.9,
+    "thumbnail": "thumbnails/307525472.jpg",
+    "processed_at": "2026-08-19T05:39:09.806560+00:00"
+  },
+  {
+    "obs_id": "307525473",
+    "target_name": "IRAS15596-bkg",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.12031251",
+    "category": "other",
+    "confidence": 99.2,
+    "thumbnail": "thumbnails/307525473.jpg",
+    "processed_at": "2026-08-19T05:39:09.353660+00:00"
+  },
+  {
+    "obs_id": "307525471",
+    "target_name": "IRAS15596-bkg",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.12031251",
+    "category": "other",
+    "confidence": 99.2,
+    "thumbnail": "thumbnails/307525471.jpg",
+    "processed_at": "2026-08-19T05:39:08.830379+00:00"
+  },
+  {
+    "obs_id": "307525543",
+    "target_name": "IRAS15596-5301",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.13961802",
+    "category": "other",
+    "confidence": 99.3,
+    "thumbnail": "thumbnails/307525543.jpg",
+    "processed_at": "2026-08-19T05:39:08.250136+00:00"
+  },
+  {
+    "obs_id": "307525551",
+    "target_name": "IRAS15596-5301",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.13961802",
+    "category": "other",
+    "confidence": 96.0,
+    "thumbnail": "thumbnails/307525551.jpg",
+    "processed_at": "2026-08-19T05:39:07.703984+00:00"
+  },
+  {
+    "obs_id": "307525548",
+    "target_name": "IRAS15596-5301",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "61271.13961802",
+    "category": "other",
+    "confidence": 99.0,
+    "thumbnail": "thumbnails/307525548.jpg",
+    "processed_at": "2026-08-19T05:39:07.202189+00:00"
+  }
+]
