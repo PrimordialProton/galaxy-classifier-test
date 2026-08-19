@@ -83,7 +83,22 @@ def save_results(results):
         json.dump(results, f, indent=2)
 
 
-def query_new_jwst_previews(already_seen, max_new, lookback_days=30):
+# Real, published JWST NIRCam/MIRI imaging surveys specifically targeting
+# galaxies (as opposed to nebulae, exoplanets, stellar populations, solar
+# system objects, etc., which make up a large share of JWST's total
+# observing time). There's no reliable single metadata field to filter
+# "is this a galaxy" after the fact, so instead this restricts the query
+# to observations FROM these known galaxy-survey programs:
+#   1345 - CEERS            1837 - PRIMER           1727 - COSMOS-Web
+#   1180, 1181, 1210, 1286, 1287 - JADES (Deep + Medium)
+#   2079 - NGDEEP            1963 - UDF-Medium
+GALAXY_SURVEY_PROPOSAL_IDS = [
+    "1345", "1837", "1727", "1180", "1181", "1210", "1286", "1287",
+    "2079", "1963",
+]
+
+
+def query_new_jwst_previews(already_seen, max_new, lookback_days=30, galaxy_surveys_only=True):
     """
     Query MAST for public JWST observations released in the last
     `lookback_days` days, and return preview image URLs for ones not
@@ -94,6 +109,10 @@ def query_new_jwst_previews(already_seen, max_new, lookback_days=30):
     (tens of thousands of records) before filtering, which is slow
     enough to risk timing out in CI. Narrowing to a recent window keeps
     this fast and is also just the correct thing to ask for.
+
+    galaxy_surveys_only=True (default) additionally restricts results to
+    GALAXY_SURVEY_PROPOSAL_IDS, since an unrestricted JWST query returns
+    mostly non-galaxy targets (nebulae, stars, exoplanets, etc).
     """
     from astropy.time import Time
     from astroquery.mast import Observations
@@ -101,13 +120,20 @@ def query_new_jwst_previews(already_seen, max_new, lookback_days=30):
     mjd_now = Time.now().mjd
     mjd_min = mjd_now - lookback_days
 
-    print(f"Querying MAST for JWST observations released in the last {lookback_days} days...")
-    obs = Observations.query_criteria(
+    query_kwargs = dict(
         obs_collection="JWST",
         dataproduct_type="image",
         intentType="science",
         t_obs_release=[mjd_min, mjd_now],
     )
+    if galaxy_surveys_only:
+        query_kwargs["proposal_id"] = GALAXY_SURVEY_PROPOSAL_IDS
+        print(f"Querying MAST for JWST galaxy-survey observations "
+              f"(proposals {GALAXY_SURVEY_PROPOSAL_IDS}) released in the last {lookback_days} days...")
+    else:
+        print(f"Querying MAST for JWST observations released in the last {lookback_days} days...")
+
+    obs = Observations.query_criteria(**query_kwargs)
     print(f"MAST query returned {len(obs)} observations in that window.")
     obs.sort("t_obs_release", reverse=True)
 
@@ -190,8 +216,15 @@ def main():
                          help="Max number of new observations to fetch/classify this run")
     parser.add_argument("--keep_results", type=int, default=60,
                          help="Max number of results to keep in the results file (older ones trimmed)")
-    parser.add_argument("--lookback_days", type=int, default=30,
-                         help="Only consider MAST observations released within this many days")
+    parser.add_argument("--lookback_days", type=int, default=3650,
+                         help="Only consider MAST observations released within this many days. "
+                              "Defaults to ~10 years since galaxy_surveys_only targets completed "
+                              "historical programs, not recent releases - 'new' here means new to "
+                              "this site (via manifest.json), not new to MAST.")
+    parser.add_argument("--all_targets", action="store_true",
+                         help="Disable the galaxy-survey proposal filter and search all public "
+                              "JWST observations (mostly non-galaxy targets: nebulae, stars, "
+                              "exoplanets, etc). Off by default.")
     args = parser.parse_args()
 
     os.makedirs(THUMBS_DIR, exist_ok=True)
@@ -208,7 +241,10 @@ def main():
     print(f"{len(seen_ids)} observations already processed previously.")
 
     print("Querying MAST for new JWST observations...")
-    new_obs = query_new_jwst_previews(seen_ids, args.max_new, lookback_days=args.lookback_days)
+    new_obs = query_new_jwst_previews(
+        seen_ids, args.max_new, lookback_days=args.lookback_days,
+        galaxy_surveys_only=not args.all_targets,
+    )
     print(f"Found {len(new_obs)} new, unprocessed observations.")
 
     results = load_results()

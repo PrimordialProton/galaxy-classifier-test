@@ -2,19 +2,24 @@ name: Fetch and classify new JWST images
 
 on:
   schedule:
-    # Runs once a day at 06:00 UTC. Adjust as you like - MAST doesn't
-    # release new public data constantly, so daily is a reasonable cadence.
+    # Runs once a day at 06:00 UTC. Since galaxy_surveys_only targets
+    # completed historical programs, "new" each day means new-to-this-site
+    # (tracked via manifest.json), not newly released by MAST.
     - cron: "0 6 * * *"
   workflow_dispatch:
     inputs:
       lookback_days:
-        description: "How many days back to search MAST for new observations"
+        description: "How many days back to search MAST (default covers the full history of the galaxy survey programs)"
         required: false
-        default: "30"
+        default: "3650"
       max_new:
         description: "Max number of new observations to fetch/classify this run"
         required: false
         default: "10"
+      all_targets:
+        description: "Search ALL public JWST observations instead of just galaxy-survey programs (mostly non-galaxy results)"
+        required: false
+        default: "false"
 
 permissions:
   contents: write  # needed so this workflow can push its own commits back
@@ -41,9 +46,14 @@ jobs:
       - name: Run fetch + classify
         run: |
           cd classifier-pipeline
+          ALL_TARGETS_FLAG=""
+          if [ "${{ github.event.inputs.all_targets }}" = "true" ]; then
+            ALL_TARGETS_FLAG="--all_targets"
+          fi
           python -u fetch_and_classify.py \
             --max_new "${{ github.event.inputs.max_new || '10' }}" \
-            --lookback_days "${{ github.event.inputs.lookback_days || '30' }}"
+            --lookback_days "${{ github.event.inputs.lookback_days || '3650' }}" \
+            $ALL_TARGETS_FLAG
 
       - name: Commit updated results
         run: |
