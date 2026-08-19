@@ -166,7 +166,7 @@ def main():
 
     print("Loading model...")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model = build_model(num_classes=len(CLASS_NAMES))
+    model = build_model(num_classes=len(CLASS_NAMES), pretrained=False)
     model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
     model.to(device)
     model.eval()

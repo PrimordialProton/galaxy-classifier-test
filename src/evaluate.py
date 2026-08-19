@@ -49,7 +49,7 @@ def main():
     )
     loader = DataLoader(dataset, batch_size=args.batch_size, shuffle=False, num_workers=2)
 
-    model = build_model(num_classes=len(CLASS_NAMES)).to(device)
+    model = build_model(num_classes=len(CLASS_NAMES), pretrained=False).to(device)
     model.load_state_dict(torch.load(args.model_path, map_location=device))
     model.eval()
 

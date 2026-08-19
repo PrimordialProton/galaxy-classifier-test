@@ -13,8 +13,20 @@ from torchvision import models
 from torchvision.models import ResNet18_Weights
 
 
-def build_model(num_classes=3, unfreeze_last_block=True):
-    weights = ResNet18_Weights.IMAGENET1K_V1
+def build_model(num_classes=3, unfreeze_last_block=True, pretrained=True):
+    """
+    pretrained=True (default, used for training): downloads ImageNet
+    weights as the starting point for fine-tuning.
+
+    pretrained=False (used for inference-only scripts, e.g. the
+    classifier pipeline): skips that download entirely and starts from
+    a randomly-initialized architecture. This is correct whenever you're
+    about to immediately overwrite every parameter with your own trained
+    checkpoint via load_state_dict() anyway - the ImageNet weights would
+    just be discarded, so there's no reason to fetch them (and no reason
+    to depend on network access to PyTorch's CDN at inference time).
+    """
+    weights = ResNet18_Weights.IMAGENET1K_V1 if pretrained else None
     model = models.resnet18(weights=weights)
 
     # Freeze all layers initially
