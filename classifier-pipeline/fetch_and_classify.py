@@ -32,6 +32,7 @@ import os
 import sys
 from datetime import datetime, timezone
 
+import numpy as np
 import requests
 import torch
 from PIL import Image
@@ -200,7 +201,51 @@ def query_new_jwst_previews(already_seen, max_new, lookback_days=30, galaxy_surv
     return results
 
 
+def looks_like_empty_starfield(image_path, bright_percentile=99, min_extended_pixels=40):
+    """
+    Coarse heuristic pre-filter for images that are just empty sky with a
+    scattering of foreground stars and no galaxy at all.
+
+    Why this exists: every image in the training data (Galaxy Zoo) has a
+    galaxy in it - the model has never once seen a true negative/empty
+    example, and its output is a 3-way softmax that always sums to 100%
+    across (elliptical, spiral, other) with no "nothing here" option. In
+    testing, this produced a 98%-confidence "galaxy" prediction on an
+    image that was just empty space with stars - the model isn't unsure
+    in cases like this, it's confidently wrong, so a confidence threshold
+    alone can't catch it. This runs BEFORE the model, using simple image
+    statistics rather than learned features: real galaxies show up as a
+    contiguous extended bright region much larger than a single star's
+    point-spread function, while an empty starfield is only small,
+    isolated bright points.
+
+    This is a coarse rule, not a learned model - it will have its own
+    false positives/negatives (e.g. a very small/distant galaxy could be
+    misflagged as empty), but it directly targets the specific failure
+    mode found in testing rather than leaving it unaddressed.
+    """
+    from scipy import ndimage
+
+    img = Image.open(image_path).convert("L")
+    arr = np.array(img, dtype=np.float32)
+
+    threshold = np.percentile(arr, bright_percentile)
+    bright_mask = arr >= threshold
+
+    labeled, num_features = ndimage.label(bright_mask)
+    if num_features == 0:
+        return True  # nothing bright at all
+
+    sizes = ndimage.sum(bright_mask, labeled, index=range(1, num_features + 1))
+    largest_component = sizes.max() if len(sizes) > 0 else 0
+
+    return largest_component < min_extended_pixels
+
+
 def classify_image(model, transform, device, image_path):
+    if looks_like_empty_starfield(image_path):
+        return "empty_field", 100.0
+
     image = Image.open(image_path).convert("RGB")
     tensor = transform(image).unsqueeze(0).to(device)
     with torch.no_grad():

@@ -41,7 +41,7 @@ jobs:
 
       - name: Install remaining dependencies
         run: |
-          pip install astroquery pillow requests
+          pip install astroquery pillow requests scipy
 
       - name: Run fetch + classify
         run: |
