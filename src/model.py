@@ -13,7 +13,7 @@ from torchvision import models
 from torchvision.models import ResNet18_Weights
 
 
-def build_model(num_classes=3, unfreeze_last_block=True, pretrained=True):
+def build_model(num_classes=3, unfreeze_last_block=True, unfreeze_layer3=False, pretrained=True):
     """
     pretrained=True (default, used for training): downloads ImageNet
     weights as the starting point for fine-tuning.
@@ -25,6 +25,10 @@ def build_model(num_classes=3, unfreeze_last_block=True, pretrained=True):
     checkpoint via load_state_dict() anyway - the ImageNet weights would
     just be discarded, so there's no reason to fetch them (and no reason
     to depend on network access to PyTorch's CDN at inference time).
+
+    unfreeze_layer3=True additionally unfreezes the second-to-last
+    residual block, giving the model more capacity to adapt beyond just
+    layer4 - worth trying if training with layer4 alone has plateaued.
     """
     weights = ResNet18_Weights.IMAGENET1K_V1 if pretrained else None
     model = models.resnet18(weights=weights)
@@ -38,6 +42,10 @@ def build_model(num_classes=3, unfreeze_last_block=True, pretrained=True):
     # from ImageNet's everyday objects.
     if unfreeze_last_block:
         for param in model.layer4.parameters():
+            param.requires_grad = True
+
+    if unfreeze_layer3:
+        for param in model.layer3.parameters():
             param.requires_grad = True
 
     # Replace the final classification layer (always trainable)

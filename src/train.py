@@ -32,9 +32,11 @@ def parse_args():
     p.add_argument("--images_dir", required=True)
     p.add_argument("--labels_csv", required=True)
     p.add_argument("--output_dir", default="../outputs")
-    p.add_argument("--epochs", type=int, default=5)
+    p.add_argument("--epochs", type=int, default=25)
     p.add_argument("--batch_size", type=int, default=32)
     p.add_argument("--lr", type=float, default=1e-3)
+    p.add_argument("--unfreeze_layer3", action="store_true",
+                    help="Also unfreeze layer3 (not just layer4) for more training capacity")
     p.add_argument("--subset_frac", type=float, default=None,
                     help="Use a fraction of the data for fast iteration (e.g. 0.1)")
     p.add_argument("--val_split", type=float, default=0.15)
@@ -90,7 +92,7 @@ def main():
     train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, num_workers=2)
     val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, num_workers=2)
 
-    model = build_model(num_classes=len(CLASS_NAMES)).to(device)
+    model = build_model(num_classes=len(CLASS_NAMES), unfreeze_layer3=args.unfreeze_layer3).to(device)
 
     # Class-weighted loss so the model doesn't just ignore the rare
     # 'other' class - weights computed from the full (pre-split) label
@@ -101,6 +103,14 @@ def main():
 
     optimizer = torch.optim.Adam(
         filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr
+    )
+
+    # Reduces the learning rate when val_acc stops improving, instead of
+    # training at a fixed rate the whole time. This is what lets training
+    # keep making progress past the point where a fixed-LR run plateaus
+    # (observed: fixed LR plateaued around epoch 15 in an earlier run).
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, mode="max", factor=0.5, patience=3
     )
 
     best_val_acc = 0.0
@@ -133,7 +143,10 @@ def main():
                 total += labels.size(0)
 
         val_acc = correct / total if total > 0 else 0.0
-        print(f"Epoch {epoch+1}: train_loss={train_loss:.4f} val_acc={val_acc:.4f}")
+        current_lr = optimizer.param_groups[0]["lr"]
+        print(f"Epoch {epoch+1}: train_loss={train_loss:.4f} val_acc={val_acc:.4f} lr={current_lr:.2e}")
+
+        scheduler.step(val_acc)
 
         if val_acc > best_val_acc:
             best_val_acc = val_acc
