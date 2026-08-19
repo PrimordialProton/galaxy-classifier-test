@@ -74,18 +74,32 @@ def save_results(results):
         json.dump(results, f, indent=2)
 
 
-def query_new_jwst_previews(already_seen, max_new):
+def query_new_jwst_previews(already_seen, max_new, lookback_days=30):
     """
-    Query MAST for recent public JWST observations and return preview
-    image URLs for ones not already in `already_seen`, newest first.
+    Query MAST for public JWST observations released in the last
+    `lookback_days` days, and return preview image URLs for ones not
+    already in `already_seen`, newest first.
+
+    The date restriction matters for more than just "newest" framing:
+    without it, this queries JWST's entire multi-year public archive
+    (tens of thousands of records) before filtering, which is slow
+    enough to risk timing out in CI. Narrowing to a recent window keeps
+    this fast and is also just the correct thing to ask for.
     """
+    from astropy.time import Time
     from astroquery.mast import Observations
 
+    mjd_now = Time.now().mjd
+    mjd_min = mjd_now - lookback_days
+
+    print(f"Querying MAST for JWST observations released in the last {lookback_days} days...")
     obs = Observations.query_criteria(
         obs_collection="JWST",
         dataproduct_type="image",
         intentType="science",
+        t_obs_release=[mjd_min, mjd_now],
     )
+    print(f"MAST query returned {len(obs)} observations in that window.")
     obs.sort("t_obs_release", reverse=True)
 
     candidates = []
@@ -101,6 +115,8 @@ def query_new_jwst_previews(already_seen, max_new):
         })
         if len(candidates) >= max_new:
             break
+
+    print(f"{len(candidates)} of those are new (not in manifest.json).")
 
     # Fetch preview product URLs for each candidate
     results = []
@@ -133,6 +149,8 @@ def main():
                          help="Max number of new observations to fetch/classify this run")
     parser.add_argument("--keep_results", type=int, default=60,
                          help="Max number of results to keep in the results file (older ones trimmed)")
+    parser.add_argument("--lookback_days", type=int, default=30,
+                         help="Only consider MAST observations released within this many days")
     args = parser.parse_args()
 
     os.makedirs(THUMBS_DIR, exist_ok=True)
@@ -149,7 +167,7 @@ def main():
     print(f"{len(seen_ids)} observations already processed previously.")
 
     print("Querying MAST for new JWST observations...")
-    new_obs = query_new_jwst_previews(seen_ids, args.max_new)
+    new_obs = query_new_jwst_previews(seen_ids, args.max_new, lookback_days=args.lookback_days)
     print(f"Found {len(new_obs)} new, unprocessed observations.")
 
     results = load_results()
