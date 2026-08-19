@@ -42,6 +42,30 @@ this repo's raw GitHub URL (see `JWST_RESULTS_URL` near the top of the
 frontend's `<script>` section). Update that URL to point at your own
 GitHub username/repo once you've pushed this pipeline.
 
+## Data source scope - and a limitation worth being upfront about
+
+The query targets known, published JWST galaxy-imaging surveys specifically
+(CEERS, JADES, COSMOS-Web, PRIMER, NGDEEP, UDF-Medium - see
+`GALAXY_SURVEY_PROPOSAL_IDS` in `fetch_and_classify.py`), rather than all
+public JWST observations. An unrestricted query returns mostly non-galaxy
+targets - nebulae, stars, exoplanets, solar system objects - since those
+make up a large share of JWST's total observing time.
+
+Worth being honest about: these particular surveys are some of the most
+heavily-studied JWST fields that exist. Professional teams have already
+published detailed morphology catalogs for huge numbers of objects in
+these exact images, often within months of public release. So this
+pipeline is best understood as a **technique demonstration** - showing
+that the trained classifier can run real inference on real telescope data
+end-to-end - rather than a novel-discovery tool surfacing objects nobody
+has looked at. The original motivation (too much data for scientists to
+manually review) is *more* true of the much larger pool of smaller,
+less-resourced General Observer programs than of these flagship surveys.
+
+A natural future extension: point a second pipeline/satellite at that
+broader, genuinely under-reviewed pool instead of - or alongside - these
+curated galaxy surveys.
+
 ## Known limitation - read before trusting the output
 
 The model was trained on Galaxy Zoo (SDSS, ground-based) images. Real
