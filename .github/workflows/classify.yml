@@ -5,7 +5,16 @@ on:
     # Runs once a day at 06:00 UTC. Adjust as you like - MAST doesn't
     # release new public data constantly, so daily is a reasonable cadence.
     - cron: "0 6 * * *"
-  workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: "How many days back to search MAST for new observations"
+        required: false
+        default: "30"
+      max_new:
+        description: "Max number of new observations to fetch/classify this run"
+        required: false
+        default: "10"
 
 permissions:
   contents: write  # needed so this workflow can push its own commits back
@@ -32,7 +41,9 @@ jobs:
       - name: Run fetch + classify
         run: |
           cd classifier-pipeline
-          python -u fetch_and_classify.py --max_new 10
+          python -u fetch_and_classify.py \
+            --max_new "${{ github.event.inputs.max_new || '10' }}" \
+            --lookback_days "${{ github.event.inputs.lookback_days || '30' }}"
 
       - name: Commit updated results
         run: |
