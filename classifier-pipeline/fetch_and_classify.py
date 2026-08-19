@@ -127,14 +127,34 @@ def query_new_jwst_previews(already_seen, max_new, lookback_days=30):
 
     print(f"{len(candidates)} of those are new (not in manifest.json).")
 
-    # Fetch preview product URLs for each candidate
+    # Fetch preview product URLs for each candidate. MAST's exact product
+    # naming varies more than expected - rather than assume one exact
+    # string match, search case-insensitively across the columns that
+    # commonly indicate a viewable preview image, and log what's actually
+    # available when nothing matches, so a failure here is diagnosable
+    # instead of silently returning nothing.
     results = []
     for cand in candidates:
         products = Observations.get_product_list(cand["obs_id"])
-        previews = products[products["productSubGroupDescription"] == "PREVIEW"]
-        if len(previews) == 0:
+
+        preview_row = None
+        for row in products:
+            subgroup = str(row.get("productSubGroupDescription") or "").lower()
+            ptype = str(row.get("productType") or "").lower()
+            uri = str(row.get("dataURI") or "").lower()
+            if "preview" in subgroup or "preview" in ptype or uri.endswith((".jpg", ".jpeg", ".png")):
+                preview_row = row
+                break
+
+        if preview_row is None:
+            available = sorted(set(
+                str(row.get("productSubGroupDescription") or "(none)") for row in products
+            ))
+            print(f"  No preview found for {cand['obs_id']} ({cand['target_name']}). "
+                  f"Available productSubGroupDescription values: {available}")
             continue
-        preview_uri = previews[0]["dataURI"]
+
+        preview_uri = preview_row["dataURI"]
         preview_url = f"https://mast.stsci.edu/api/v0.1/Download/file?uri={preview_uri}"
         cand["preview_url"] = preview_url
         results.append(cand)
