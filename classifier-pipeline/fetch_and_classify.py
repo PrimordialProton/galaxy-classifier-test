@@ -111,21 +111,33 @@ def query_new_jwst_previews(already_seen, max_new, lookback_days=30):
     print(f"MAST query returned {len(obs)} observations in that window.")
     obs.sort("t_obs_release", reverse=True)
 
+    # JWST typically takes many repeated/dithered exposures of the same
+    # target within one visit, so simply grabbing the next N observations
+    # chronologically tends to pull near-duplicate frames of a single
+    # target rather than a diverse sample. Instead, walk newest-first and
+    # keep at most one (the newest) observation per distinct target name,
+    # so a batch of max_new results covers max_new different objects
+    # rather than max_new frames of the same object.
     candidates = []
+    seen_targets_this_run = set()
     for row in obs:
         obs_id = str(row["obsid"])
+        target_name = row["target_name"]
         if obs_id in already_seen:
             continue
+        if target_name in seen_targets_this_run:
+            continue
+        seen_targets_this_run.add(target_name)
         candidates.append({
             "obs_id": obs_id,
-            "target_name": row["target_name"],
+            "target_name": target_name,
             "instrument": row["instrument_name"],
             "obs_release": str(row["t_obs_release"]),
         })
         if len(candidates) >= max_new:
             break
 
-    print(f"{len(candidates)} of those are new (not in manifest.json).")
+    print(f"{len(candidates)} of those are new and from distinct targets (not in manifest.json).")
 
     # Fetch preview product URLs for each candidate. MAST's exact product
     # naming varies more than expected - rather than assume one exact
