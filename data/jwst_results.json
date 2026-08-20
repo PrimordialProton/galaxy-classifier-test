@@ -1,5 +1,105 @@
 [
   {
+    "obs_id": "183106718",
+    "target_name": "MEDS0006",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60595.03694438",
+    "category": "other",
+    "confidence": 98.6,
+    "thumbnail": "thumbnails/183106718.jpg",
+    "processed_at": "2026-08-20T06:34:22.686763+00:00"
+  },
+  {
+    "obs_id": "185423321",
+    "target_name": "1286_medium_jwst_trim2_clean1",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60603.22503472",
+    "category": "elliptical",
+    "confidence": 74.7,
+    "thumbnail": "thumbnails/185423321.jpg",
+    "processed_at": "2026-08-20T06:34:22.371552+00:00"
+  },
+  {
+    "obs_id": "191536928",
+    "target_name": "MEDS0004",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60630.27833325",
+    "category": "other",
+    "confidence": 98.7,
+    "thumbnail": "thumbnails/191536928.jpg",
+    "processed_at": "2026-08-20T06:34:21.931537+00:00"
+  },
+  {
+    "obs_id": "192112125",
+    "target_name": "MEDS0001-replan",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60631.64879628",
+    "category": "elliptical",
+    "confidence": 81.1,
+    "thumbnail": "thumbnails/192112125.jpg",
+    "processed_at": "2026-08-20T06:34:21.675095+00:00"
+  },
+  {
+    "obs_id": "198802998",
+    "target_name": "1286_4of6_trim_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60663.72128468",
+    "category": "other",
+    "confidence": 90.1,
+    "thumbnail": "thumbnails/198802998.jpg",
+    "processed_at": "2026-08-20T06:34:21.146750+00:00"
+  },
+  {
+    "obs_id": "198949028",
+    "target_name": "1286_7and8_trim_final_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60664.78586798",
+    "category": "elliptical",
+    "confidence": 67.4,
+    "thumbnail": "thumbnails/198949028.jpg",
+    "processed_at": "2026-08-20T06:34:20.657618+00:00"
+  },
+  {
+    "obs_id": "199975195",
+    "target_name": "MEDS0002a",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60676.51780091",
+    "category": "other",
+    "confidence": 98.6,
+    "thumbnail": "thumbnails/199975195.jpg",
+    "processed_at": "2026-08-20T06:34:20.170024+00:00"
+  },
+  {
+    "obs_id": "199982453",
+    "target_name": "MEDS0002b",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60676.57672444",
+    "category": "other",
+    "confidence": 94.6,
+    "thumbnail": "thumbnails/199982453.jpg",
+    "processed_at": "2026-08-20T06:34:19.874337+00:00"
+  },
+  {
+    "obs_id": "200061699",
+    "target_name": "MEDS0005-replan",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60677.40751152",
+    "category": "other",
+    "confidence": 98.4,
+    "thumbnail": "thumbnails/200061699.jpg",
+    "processed_at": "2026-08-20T06:34:19.615914+00:00"
+  },
+  {
+    "obs_id": "236585167",
+    "target_name": "1287_trim_final_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61054.09403935",
+    "category": "other",
+    "confidence": 96.7,
+    "thumbnail": "thumbnails/236585167.jpg",
+    "processed_at": "2026-08-20T06:34:19.288712+00:00"
+  },
+  {
     "obs_id": "183106679",
     "target_name": "MEDS0006",
     "instrument": "MIRI/IMAGE",
@@ -498,105 +598,5 @@
     "confidence": 97.9,
     "thumbnail": "thumbnails/236585166.jpg",
     "processed_at": "2026-08-19T06:22:13.236579+00:00"
-  },
-  {
-    "obs_id": "303219256",
-    "target_name": "LP-469-206",
-    "instrument": "NIRCAM/CORON",
-    "obs_release": "61263.57644667",
-    "category": "other",
-    "confidence": 98.2,
-    "thumbnail": "thumbnails/303219256.jpg",
-    "processed_at": "2026-08-19T06:08:02.060391+00:00"
-  },
-  {
-    "obs_id": "303219291",
-    "target_name": "G-19-7",
-    "instrument": "NIRCAM/CORON",
-    "obs_release": "61263.57907395",
-    "category": "other",
-    "confidence": 97.9,
-    "thumbnail": "thumbnails/303219291.jpg",
-    "processed_at": "2026-08-19T06:08:01.952402+00:00"
-  },
-  {
-    "obs_id": "303219282",
-    "target_name": "V-TZ-Ari",
-    "instrument": "NIRCAM/CORON",
-    "obs_release": "61263.58144665",
-    "category": "other",
-    "confidence": 97.0,
-    "thumbnail": "thumbnails/303219282.jpg",
-    "processed_at": "2026-08-19T06:08:01.825362+00:00"
-  },
-  {
-    "obs_id": "303219292",
-    "target_name": "Wolf-629",
-    "instrument": "NIRCAM/CORON",
-    "obs_release": "61263.58185175",
-    "category": "other",
-    "confidence": 97.0,
-    "thumbnail": "thumbnails/303219292.jpg",
-    "processed_at": "2026-08-19T06:08:01.724267+00:00"
-  },
-  {
-    "obs_id": "447194178",
-    "target_name": "Clean_North_CVZ_MRS",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61263.77915507",
-    "category": "other",
-    "confidence": 98.9,
-    "thumbnail": "thumbnails/447194178.jpg",
-    "processed_at": "2026-08-19T06:08:01.607492+00:00"
-  },
-  {
-    "obs_id": "447289642",
-    "target_name": "Clean_North_CVZ_MRS-copy_NIR",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "61264.37950224",
-    "category": "other",
-    "confidence": 96.9,
-    "thumbnail": "thumbnails/447289642.jpg",
-    "processed_at": "2026-08-19T06:08:01.483636+00:00"
-  },
-  {
-    "obs_id": "303220489",
-    "target_name": "UCAC4-300-090317",
-    "instrument": "NIRCAM/CORON",
-    "obs_release": "61264.88229162",
-    "category": "other",
-    "confidence": 99.4,
-    "thumbnail": "thumbnails/303220489.jpg",
-    "processed_at": "2026-08-19T06:08:01.263136+00:00"
-  },
-  {
-    "obs_id": "447564673",
-    "target_name": "ECLIPTIC-RA160",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "61264.90384257",
-    "category": "other",
-    "confidence": 82.7,
-    "thumbnail": "thumbnails/447564673.jpg",
-    "processed_at": "2026-08-19T06:08:01.115877+00:00"
-  },
-  {
-    "obs_id": "447646651",
-    "target_name": "Clean_North_CVZ_IMA_back",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "61264.96980319",
-    "category": "other",
-    "confidence": 97.5,
-    "thumbnail": "thumbnails/447646651.jpg",
-    "processed_at": "2026-08-19T06:08:00.907916+00:00"
-  },
-  {
-    "obs_id": "303220629",
-    "target_name": "Maki-Repeated",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "61264.9901157",
-    "category": "other",
-    "confidence": 90.6,
-    "thumbnail": "thumbnails/303220629.jpg",
-    "processed_at": "2026-08-19T06:08:00.751637+00:00"
   }
 ]
