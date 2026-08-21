@@ -1,5 +1,105 @@
 [
   {
+    "obs_id": "224008605",
+    "target_name": "POINTINGTHREE-B",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60591.4120717",
+    "category": "elliptical",
+    "confidence": 74.5,
+    "thumbnail": "thumbnails/224008605.jpg",
+    "processed_at": "2026-08-21T06:36:09.137243+00:00"
+  },
+  {
+    "obs_id": "181963763",
+    "target_name": "1180_medium_jwst_trim2_clean1",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60591.99486106",
+    "category": "elliptical",
+    "confidence": 71.0,
+    "thumbnail": "thumbnails/181963763.jpg",
+    "processed_at": "2026-08-21T06:36:08.821370+00:00"
+  },
+  {
+    "obs_id": "183106696",
+    "target_name": "MEDS0006",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60595.03274296",
+    "category": "elliptical",
+    "confidence": 79.2,
+    "thumbnail": "thumbnails/183106696.jpg",
+    "processed_at": "2026-08-21T06:36:08.406990+00:00"
+  },
+  {
+    "obs_id": "185423322",
+    "target_name": "1286_medium_jwst_trim2_clean1",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60603.22503472",
+    "category": "elliptical",
+    "confidence": 68.4,
+    "thumbnail": "thumbnails/185423322.jpg",
+    "processed_at": "2026-08-21T06:36:08.051502+00:00"
+  },
+  {
+    "obs_id": "191536635",
+    "target_name": "MEDS0004",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60630.27442124",
+    "category": "other",
+    "confidence": 61.1,
+    "thumbnail": "thumbnails/191536635.jpg",
+    "processed_at": "2026-08-21T06:36:07.745459+00:00"
+  },
+  {
+    "obs_id": "192112069",
+    "target_name": "MEDS0001-replan",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60631.64879628",
+    "category": "elliptical",
+    "confidence": 82.2,
+    "thumbnail": "thumbnails/192112069.jpg",
+    "processed_at": "2026-08-21T06:36:07.355609+00:00"
+  },
+  {
+    "obs_id": "198788135",
+    "target_name": "1286_4of6_trim_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60663.72128468",
+    "category": "elliptical",
+    "confidence": 86.2,
+    "thumbnail": "thumbnails/198788135.jpg",
+    "processed_at": "2026-08-21T06:36:06.929917+00:00"
+  },
+  {
+    "obs_id": "198949046",
+    "target_name": "1286_7and8_trim_final_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60664.78586798",
+    "category": "elliptical",
+    "confidence": 69.9,
+    "thumbnail": "thumbnails/198949046.jpg",
+    "processed_at": "2026-08-21T06:36:06.575446+00:00"
+  },
+  {
+    "obs_id": "200061690",
+    "target_name": "MEDS0005-replan",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60677.40743051",
+    "category": "elliptical",
+    "confidence": 86.4,
+    "thumbnail": "thumbnails/200061690.jpg",
+    "processed_at": "2026-08-21T06:36:06.160033+00:00"
+  },
+  {
+    "obs_id": "236585168",
+    "target_name": "1287_trim_final_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "61054.09403935",
+    "category": "elliptical",
+    "confidence": 88.3,
+    "thumbnail": "thumbnails/236585168.jpg",
+    "processed_at": "2026-08-21T06:36:05.742928+00:00"
+  },
+  {
     "obs_id": "183106718",
     "target_name": "MEDS0006",
     "instrument": "MIRI/IMAGE",
@@ -498,105 +598,5 @@
     "confidence": 91.9,
     "thumbnail": "thumbnails/181968197.jpg",
     "processed_at": "2026-08-19T06:22:17.654714+00:00"
-  },
-  {
-    "obs_id": "183106713",
-    "target_name": "MEDS0006",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "60595.03694438",
-    "category": "other",
-    "confidence": 97.7,
-    "thumbnail": "thumbnails/183106713.jpg",
-    "processed_at": "2026-08-19T06:22:17.293929+00:00"
-  },
-  {
-    "obs_id": "185423320",
-    "target_name": "1286_medium_jwst_trim2_clean1",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60603.22503472",
-    "category": "other",
-    "confidence": 86.9,
-    "thumbnail": "thumbnails/185423320.jpg",
-    "processed_at": "2026-08-19T06:22:17.000816+00:00"
-  },
-  {
-    "obs_id": "191536557",
-    "target_name": "MEDS0004",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "60630.27833325",
-    "category": "other",
-    "confidence": 99.3,
-    "thumbnail": "thumbnails/191536557.jpg",
-    "processed_at": "2026-08-19T06:22:16.361771+00:00"
-  },
-  {
-    "obs_id": "192112181",
-    "target_name": "MEDS0001-replan",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60631.64879628",
-    "category": "other",
-    "confidence": 97.8,
-    "thumbnail": "thumbnails/192112181.jpg",
-    "processed_at": "2026-08-19T06:22:16.040583+00:00"
-  },
-  {
-    "obs_id": "198802999",
-    "target_name": "1286_4of6_trim_clean",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60663.72128468",
-    "category": "other",
-    "confidence": 96.0,
-    "thumbnail": "thumbnails/198802999.jpg",
-    "processed_at": "2026-08-19T06:22:15.669080+00:00"
-  },
-  {
-    "obs_id": "198949026",
-    "target_name": "1286_7and8_trim_final_clean",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60664.78586798",
-    "category": "other",
-    "confidence": 90.2,
-    "thumbnail": "thumbnails/198949026.jpg",
-    "processed_at": "2026-08-19T06:22:15.169259+00:00"
-  },
-  {
-    "obs_id": "199975196",
-    "target_name": "MEDS0002a",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60676.52178232",
-    "category": "other",
-    "confidence": 90.1,
-    "thumbnail": "thumbnails/199975196.jpg",
-    "processed_at": "2026-08-19T06:22:14.660113+00:00"
-  },
-  {
-    "obs_id": "199982450",
-    "target_name": "MEDS0002b",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60676.58075215",
-    "category": "other",
-    "confidence": 95.1,
-    "thumbnail": "thumbnails/199982450.jpg",
-    "processed_at": "2026-08-19T06:22:13.996014+00:00"
-  },
-  {
-    "obs_id": "200061676",
-    "target_name": "MEDS0005-replan",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "60677.40751152",
-    "category": "other",
-    "confidence": 99.5,
-    "thumbnail": "thumbnails/200061676.jpg",
-    "processed_at": "2026-08-19T06:22:13.488474+00:00"
-  },
-  {
-    "obs_id": "236585166",
-    "target_name": "1287_trim_final_clean",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "61054.09403935",
-    "category": "spiral",
-    "confidence": 97.9,
-    "thumbnail": "thumbnails/236585166.jpg",
-    "processed_at": "2026-08-19T06:22:13.236579+00:00"
   }
 ]
