@@ -1,5 +1,105 @@
 [
   {
+    "obs_id": "213400061",
+    "target_name": "CWEBTILE-1-10",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60418.07037038",
+    "category": "elliptical",
+    "confidence": 59.1,
+    "thumbnail": "thumbnails/213400061.jpg",
+    "processed_at": "2026-09-13T10:54:40.869996+00:00"
+  },
+  {
+    "obs_id": "213400271",
+    "target_name": "CWEBTILE-3-11",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60418.15495369",
+    "category": "other",
+    "confidence": 90.9,
+    "thumbnail": "thumbnails/213400271.jpg",
+    "processed_at": "2026-09-13T10:54:40.146343+00:00"
+  },
+  {
+    "obs_id": "213419744",
+    "target_name": "CWEBTILE-3-6",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60419.27454855",
+    "category": "other",
+    "confidence": 91.3,
+    "thumbnail": "thumbnails/213419744.jpg",
+    "processed_at": "2026-09-13T10:54:39.812634+00:00"
+  },
+  {
+    "obs_id": "224010331",
+    "target_name": "21_3_23_mediumjwst_trim_ta5",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60436.65274302",
+    "category": "other",
+    "confidence": 62.8,
+    "thumbnail": "thumbnails/224010331.jpg",
+    "processed_at": "2026-09-13T10:54:39.449044+00:00"
+  },
+  {
+    "obs_id": "214893302",
+    "target_name": "COSMOS-1-Tile-21",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60451.15425919",
+    "category": "other",
+    "confidence": 72.6,
+    "thumbnail": "thumbnails/214893302.jpg",
+    "processed_at": "2026-09-13T10:54:38.869772+00:00"
+  },
+  {
+    "obs_id": "214932797",
+    "target_name": "COSMOS-1-Tile-22",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60451.37827538",
+    "category": "other",
+    "confidence": 89.5,
+    "thumbnail": "thumbnails/214932797.jpg",
+    "processed_at": "2026-09-13T10:54:38.304157+00:00"
+  },
+  {
+    "obs_id": "214932780",
+    "target_name": "COSMOS-1-Tile-23",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60451.40700227",
+    "category": "other",
+    "confidence": 87.0,
+    "thumbnail": "thumbnails/214932780.jpg",
+    "processed_at": "2026-09-13T10:54:37.664488+00:00"
+  },
+  {
+    "obs_id": "214954509",
+    "target_name": "COSMOS-1-Tile-24",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60451.49120368",
+    "category": "elliptical",
+    "confidence": 84.0,
+    "thumbnail": "thumbnails/214954509.jpg",
+    "processed_at": "2026-09-13T10:54:36.921107+00:00"
+  },
+  {
+    "obs_id": "198780802",
+    "target_name": "1286_4of6_trim_clean",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60657.70467585",
+    "category": "elliptical",
+    "confidence": 82.7,
+    "thumbnail": "thumbnails/198780802.jpg",
+    "processed_at": "2026-09-13T10:54:36.291342+00:00"
+  },
+  {
+    "obs_id": "253281288",
+    "target_name": "1287_trim_final_clean",
+    "instrument": "NIRSPEC/MSA",
+    "obs_release": "60691.87634254",
+    "category": "other",
+    "confidence": 97.6,
+    "thumbnail": "thumbnails/253281288.jpg",
+    "processed_at": "2026-09-13T10:54:35.656341+00:00"
+  },
+  {
     "obs_id": "213400060",
     "target_name": "CWEBTILE-1-10",
     "instrument": "NIRCAM/IMAGE",
@@ -498,105 +598,5 @@
     "confidence": 97.6,
     "thumbnail": "thumbnails/252833761.jpg",
     "processed_at": "2026-09-08T10:26:54.881456+00:00"
-  },
-  {
-    "obs_id": "214932794",
-    "target_name": "COSMOS-1-Tile-22",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "60451.39109951",
-    "category": "other",
-    "confidence": 97.6,
-    "thumbnail": "thumbnails/214932794.jpg",
-    "processed_at": "2026-09-07T11:18:42.575866+00:00"
-  },
-  {
-    "obs_id": "214932785",
-    "target_name": "COSMOS-1-Tile-23",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60451.40700227",
-    "category": "other",
-    "confidence": 71.2,
-    "thumbnail": "thumbnails/214932785.jpg",
-    "processed_at": "2026-09-07T11:18:42.351089+00:00"
-  },
-  {
-    "obs_id": "214954501",
-    "target_name": "COSMOS-1-Tile-24",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60451.49120368",
-    "category": "elliptical",
-    "confidence": 71.3,
-    "thumbnail": "thumbnails/214954501.jpg",
-    "processed_at": "2026-09-07T11:18:42.077960+00:00"
-  },
-  {
-    "obs_id": "220850137",
-    "target_name": "UDS-2-Tile-8",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60509.3668866",
-    "category": "elliptical",
-    "confidence": 55.8,
-    "thumbnail": "thumbnails/220850137.jpg",
-    "processed_at": "2026-09-07T11:18:41.823379+00:00"
-  },
-  {
-    "obs_id": "225942592",
-    "target_name": "UDS-2-Tile-10",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60514.43238421",
-    "category": "elliptical",
-    "confidence": 91.7,
-    "thumbnail": "thumbnails/225942592.jpg",
-    "processed_at": "2026-09-07T11:18:41.427158+00:00"
-  },
-  {
-    "obs_id": "238309438",
-    "target_name": "UDS-2",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "60514.43238421",
-    "category": "other",
-    "confidence": 95.0,
-    "thumbnail": "thumbnails/238309438.jpg",
-    "processed_at": "2026-09-07T11:18:41.126440+00:00"
-  },
-  {
-    "obs_id": "224739196",
-    "target_name": "POINTINGONE-A",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60583.40166657",
-    "category": "elliptical",
-    "confidence": 85.0,
-    "thumbnail": "thumbnails/224739196.jpg",
-    "processed_at": "2026-09-07T11:18:40.947109+00:00"
-  },
-  {
-    "obs_id": "224011063",
-    "target_name": "POINTINGTWO-A",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60584.60799759",
-    "category": "elliptical",
-    "confidence": 80.8,
-    "thumbnail": "thumbnails/224011063.jpg",
-    "processed_at": "2026-09-07T11:18:40.643531+00:00"
-  },
-  {
-    "obs_id": "198780837",
-    "target_name": "1286_4of6_trim_clean",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60657.70467585",
-    "category": "elliptical",
-    "confidence": 71.1,
-    "thumbnail": "thumbnails/198780837.jpg",
-    "processed_at": "2026-09-07T11:18:40.244175+00:00"
-  },
-  {
-    "obs_id": "252838387",
-    "target_name": "1287_trim_final_clean",
-    "instrument": "NIRSPEC/MSA",
-    "obs_release": "60691.87634254",
-    "category": "other",
-    "confidence": 97.6,
-    "thumbnail": "thumbnails/252838387.jpg",
-    "processed_at": "2026-09-07T11:18:39.935166+00:00"
   }
 ]
