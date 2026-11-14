@@ -1,5 +1,105 @@
 [
   {
+    "obs_id": "163880261",
+    "target_name": "UDS-2-Tile-6-Copy",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60165.7495254",
+    "category": "other",
+    "confidence": 99.7,
+    "thumbnail": "thumbnails/163880261.jpg",
+    "processed_at": "2026-11-14T12:50:50.625640+00:00"
+  },
+  {
+    "obs_id": "183107238",
+    "target_name": "UDS-2",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60172.18350691",
+    "category": "other",
+    "confidence": 100.0,
+    "thumbnail": "thumbnails/183107238.jpg",
+    "processed_at": "2026-11-14T12:50:50.250248+00:00"
+  },
+  {
+    "obs_id": "95383150",
+    "target_name": "POINTINGONE-B",
+    "instrument": "MIRI/IMAGE",
+    "obs_release": "60217.39562491",
+    "category": "other",
+    "confidence": 100.0,
+    "thumbnail": "thumbnails/95383150.jpg",
+    "processed_at": "2026-11-14T12:50:49.922110+00:00"
+  },
+  {
+    "obs_id": "97276912",
+    "target_name": "GS-MEDIUM-HST",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60228.67717579",
+    "category": "other",
+    "confidence": 99.7,
+    "thumbnail": "thumbnails/97276912.jpg",
+    "processed_at": "2026-11-14T12:50:49.676990+00:00"
+  },
+  {
+    "obs_id": "252834715",
+    "target_name": "DEEP-HST-V1-CLEAN",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60242.55616882",
+    "category": "other",
+    "confidence": 99.8,
+    "thumbnail": "thumbnails/252834715.jpg",
+    "processed_at": "2026-11-14T12:50:49.223839+00:00"
+  },
+  {
+    "obs_id": "183117917",
+    "target_name": "MEDS0002",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60243.68600687",
+    "category": "other",
+    "confidence": 99.9,
+    "thumbnail": "thumbnails/183117917.jpg",
+    "processed_at": "2026-11-14T12:50:48.819026+00:00"
+  },
+  {
+    "obs_id": "194916541",
+    "target_name": "COSMOS-2-TILE-1",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60274.03694438",
+    "category": "other",
+    "confidence": 99.7,
+    "thumbnail": "thumbnails/194916541.jpg",
+    "processed_at": "2026-11-14T12:50:48.421608+00:00"
+  },
+  {
+    "obs_id": "194940559",
+    "target_name": "COSMOS-2-TILE-11",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60274.0625",
+    "category": "other",
+    "confidence": 99.9,
+    "thumbnail": "thumbnails/194940559.jpg",
+    "processed_at": "2026-11-14T12:50:47.979882+00:00"
+  },
+  {
+    "obs_id": "195922801",
+    "target_name": "COSMOS-2-TILE-7",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60276.1638194",
+    "category": "other",
+    "confidence": 99.7,
+    "thumbnail": "thumbnails/195922801.jpg",
+    "processed_at": "2026-11-14T12:50:47.539227+00:00"
+  },
+  {
+    "obs_id": "196022995",
+    "target_name": "COSMOS-2-TILE-20",
+    "instrument": "NIRCAM/IMAGE",
+    "obs_release": "60276.24937504",
+    "category": "other",
+    "confidence": 95.7,
+    "thumbnail": "thumbnails/196022995.jpg",
+    "processed_at": "2026-11-14T12:50:47.152080+00:00"
+  },
+  {
     "obs_id": "183635400",
     "target_name": "POINTINGTWO-B",
     "instrument": "MIRI/IMAGE",
@@ -498,105 +598,5 @@
     "confidence": 100.0,
     "thumbnail": "thumbnails/199454373.jpg",
     "processed_at": "2026-11-09T14:52:51.656965+00:00"
-  },
-  {
-    "obs_id": "195922330",
-    "target_name": "COSMOS-2-TILE-7",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60276.1638194",
-    "category": "other",
-    "confidence": 92.2,
-    "thumbnail": "thumbnails/195922330.jpg",
-    "processed_at": "2026-11-08T12:35:52.307200+00:00"
-  },
-  {
-    "obs_id": "196023355",
-    "target_name": "COSMOS-2-TILE-20",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "60276.28045137",
-    "category": "other",
-    "confidence": 100.0,
-    "thumbnail": "thumbnails/196023355.jpg",
-    "processed_at": "2026-11-08T12:35:51.624967+00:00"
-  },
-  {
-    "obs_id": "198777623",
-    "target_name": "CWEBTILE-4-9",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60290.73292815",
-    "category": "other",
-    "confidence": 97.2,
-    "thumbnail": "thumbnails/198777623.jpg",
-    "processed_at": "2026-11-08T12:35:51.084540+00:00"
-  },
-  {
-    "obs_id": "198783533",
-    "target_name": "CWEBTILE-4-3",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60294.79035871",
-    "category": "other",
-    "confidence": 99.8,
-    "thumbnail": "thumbnails/198783533.jpg",
-    "processed_at": "2026-11-08T12:35:50.393258+00:00"
-  },
-  {
-    "obs_id": "199453924",
-    "target_name": "CWEBTILE-0-12",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60306.01561334",
-    "category": "other",
-    "confidence": 98.3,
-    "thumbnail": "thumbnails/199453924.jpg",
-    "processed_at": "2026-11-08T12:35:49.650625+00:00"
-  },
-  {
-    "obs_id": "199454072",
-    "target_name": "CWEBTILE-0-5",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60306.07082177",
-    "category": "other",
-    "confidence": 99.9,
-    "thumbnail": "thumbnails/199454072.jpg",
-    "processed_at": "2026-11-08T12:35:48.938613+00:00"
-  },
-  {
-    "obs_id": "199454105",
-    "target_name": "CWEBTILE-0-16",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60306.12480328",
-    "category": "other",
-    "confidence": 99.7,
-    "thumbnail": "thumbnails/199454105.jpg",
-    "processed_at": "2026-11-08T12:35:48.200929+00:00"
-  },
-  {
-    "obs_id": "199454297",
-    "target_name": "CWEBTILE-1-15",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60306.23731485",
-    "category": "other",
-    "confidence": 98.5,
-    "thumbnail": "thumbnails/199454297.jpg",
-    "processed_at": "2026-11-08T12:35:47.473008+00:00"
-  },
-  {
-    "obs_id": "199454376",
-    "target_name": "CWEBTILE-1-11",
-    "instrument": "NIRCAM/IMAGE",
-    "obs_release": "60306.30157408",
-    "category": "other",
-    "confidence": 99.9,
-    "thumbnail": "thumbnails/199454376.jpg",
-    "processed_at": "2026-11-08T12:35:46.729532+00:00"
-  },
-  {
-    "obs_id": "199454622",
-    "target_name": "CWEBTILE-0-11",
-    "instrument": "MIRI/IMAGE",
-    "obs_release": "60306.33023147",
-    "category": "other",
-    "confidence": 100.0,
-    "thumbnail": "thumbnails/199454622.jpg",
-    "processed_at": "2026-11-08T12:35:46.055580+00:00"
   }
 ]
